@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  mail_processer:
+    build: . 
+    volumes:
+      - ./:/opt
+    command: python3 /opt/send_email.py /opt/email_template.json /opt/customers.csv /opt/output_emails.json /opt/errors.csv

@@ -1,0 +1,7 @@
+{
+    "from": "The Marketing Team<marketing@example.com",
+    "to": "michelle.smith@examle.com",
+    "subject": "A new product is being lauched soon",
+    "mimeType": "text/plan",
+    "body": "Hi Mrs Michelle Smith,\nToday, 10 Dec 2021, we would like to tell you that... Sincerely, \nThe Marketing Team"
+}
