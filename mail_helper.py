@@ -1,4 +1,5 @@
 import json
+import re
 from enum import Enum
 from factory import EmailFactory
 
@@ -46,7 +47,10 @@ class EmailHelper:
 
     @classmethod
     def is_error_customer(cls, customer):
+        regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
         customer_data = customer.split(',')
         if len(customer_data) != 4 or any(not c.rstrip("\n") for c in customer_data):
+            return True
+        if re.fullmatch(regex, customer[3]):
             return True
         return False
