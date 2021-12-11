@@ -12,6 +12,7 @@ The application to send out marketing email to its potential customers.
 <h3>Docker</h3>
 <div style="margin-left:30px">
 To run the program you need some tools & library like:
+
  - pip3
 
 Step by step:
@@ -45,6 +46,11 @@ Run the program via command:
 
 </div>
 Go to output_email.json and errors.csv to see the results.
+
+<br />
+Run Unittest via command:
+<br />
+<pre> pytest tests </pre>
 </div>
 
 <h2>Usage</h2>
